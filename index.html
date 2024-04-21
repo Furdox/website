@@ -1,12 +1,6 @@
 <p style="padding:30px;"></p>
 <p><div class="gototext" id="gototextinfo"><span>Check me out on <a href="http://spacehey.com/furdox">SpaceHey!</a></span></div></p>
-
-
-
-
-
-
-
+<p><div class="gototext" id="gototextinfo"><span><a href="https://website.furdox.tk/furdoxspacehey.html">Click here to get a clone of the page if you can't connect to spacehey.com</a></span></div></p>
 
 <p style="padding:60px;"></p>
 <p><div style="text-align:center;"> <audio loop="" autoplay="" controls="" crossorigin="anonymous">
@@ -14,38 +8,18 @@
     </audio>
 </div></p>
 
-<style>
-    body {
-    text-align:center;
-    position:center;
-    }
-    .gototext span {
-    text-align:center;
-    color: white;
-    font-size: 36px;
-    font-family:Rubik;
-    font-weight:bold;
-    joe-biden:lmfao;
-    padding: 10px;
-    background: #088a;
-    }
-    .gototext span a {
-        color:cyan;
-    }
-    .gototext span a:hover {
-        color:red;
-    }
-
-    </style>
-<!-- begin spacehey css -->
 
 
-<!-- <iframe width="0" height="0" src="https://www.youtube.com/embed/UjPt3cffK8o?autoplay=1&loop=1" title="progressbar95verylong" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
--->
-<!-- (c) Layout created by fini hoover :3 (https://layouts.spacehey.com/layout?id=30834) -->
-<div class="snowflakes">
+
+
+
+
+
+
+<!-- (c) Layout created by fini hoover :3 (https://layouts.spacehey.com/layout?id=30834), heavily modified by Furdox :3 -->
+</p><div class="snowflakes">
 <div class="snowflake"><img src="https://raw.githubusercontent.com/Furdox/oldwebsite/main/oldwebsite/website/cdn/pb95o.png"/></div>
-<div class="snowflake"><img src="https://raw.githubusercontent.com/Furdox/oldwebsite/main/oldwebsite/website/cdn/pb95b.png"/></div>
+<div class="snowflake"><img src="https://raw.githubusercontent.com/Furdox/oldwebsite/main/oldwebsite/website/cdn/pb95p.png"/></div>
 <div class="snowflake"><img src="https://raw.githubusercontent.com/Furdox/oldwebsite/main/oldwebsite/website/cdn/pb95bb.png"/></div>
 <div class="snowflake"><img src="https://raw.githubusercontent.com/Furdox/oldwebsite/main/oldwebsite/website/cdn/pb95b.png"/></div>
 <div class="snowflake"><img src="https://raw.githubusercontent.com/Furdox/oldwebsite/main/oldwebsite/website/cdn/pb95o.png"/></div>
@@ -75,10 +49,10 @@
 }
 @keyframes snowflakes-fall {
   0% {
-    top: -10%;
+    top: -100px;
   }
   100% {
-    top: 100%;
+    top: 4000px;
   }
 }
 @keyframes snowflakes-shake {
@@ -100,12 +74,12 @@
   user-select: none;
   cursor: default;
   -webkit-animation-name: snowflakes-fall, snowflakes-shake;
-  -webkit-animation-duration: 5s, 2s;
+  -webkit-animation-duration: 10s, 2s;
   -webkit-animation-timing-function: linear, linear;
   -webkit-animation-iteration-count: infinite, infinite;
   -webkit-animation-play-state: running, running;
   animation-name: snowflakes-fall, snowflakes-shake;
-  animation-duration: 5s, 2s;
+  animation-duration: 10s, 2s;
   animation-timing-function: linear, linear;
   animation-iteration-count: infinite, infinite;
   animation-play-state: running, running;
@@ -162,7 +136,7 @@
 }
 .snowflake:nth-of-type(10) {
   left: 25%;
-  -webkit-animation-delay: 2s, 0s;
+  -webkit-animation-delay: 3s, 0s;
   animation-delay: 2s, 0s;
 }
 .snowflake:nth-of-type(11) {
@@ -171,6 +145,9 @@
   animation-delay: 4s, 2.5s;
 }
 </style>
+
+
+
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
@@ -215,6 +192,14 @@
         font-weight: 500;
     }
     
+    .truep10 {
+        padding: 10px;
+    }
+
+    .truep5 {
+        padding: 5px;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         font-family: Rubik;
         font-size: 12px;
@@ -234,24 +219,42 @@
         --green: #000;
         --winbarcolor: linear-gradient(to right, #f20, #f40, #f90, #e8e28e);
         --boxbg: #088a;
+        --windowsborder: #0ffa #00fa #00fa #0ffa;
+        --windowsborderred: #ff6565 #ff0000 #ff0000 #ff6565;
     }
 
+    .container {
+        width: 1200px;
+        max-width: 100%;
+        margin: 0 auto 10px;
+    }
+    .container.full-width {
+        width: auto;
+    }
     nav {
         margin: 10px;
     }
     
-     nav .links:before {
+    nav .links:before {
         display: block;
         padding-left: 5px;
         padding-bottom: 1px;
-        border-bottom-style: groove;
         background-image: url(https://i.imgur.com/CKX2NUO.png), var(--winbarcolor);
         background-repeat: no-repeat;
         background-position: right;
         font-weight: 600;
         content: "spacehey - Microsoft Internet Explorer";
+        text-align: center;
+        border-style: outset;
+        border-width: 2px;
+        border-color: var(--windowsborderred);
     }
-    
+
+    nav .links {
+        text-align: center;
+        width: 100%
+    }    
+
     .top {
         color: transparent !important;
         height: 0 !important;
@@ -285,7 +288,7 @@
     nav .links {
         border-style: outset;
         border-width: 2px;
-        border-color: #fff #000 #000 #fff;
+        border-color: var(--windowsborderred);
         padding: 0 0 3px 0;
     }
     
@@ -305,8 +308,8 @@
     .col.w-40.left h1{
         border-style: outset outset none outset;
         border-width: 2px;
-        border-color: #fff #000 #000 #fff;
-        background-image: url(https://i.imgur.com/CKX2NUO.png), var(--winbarcolor);
+        border-color: var(--windowsborderred);
+        background-image: var(--winbarcolor);
         background-repeat: no-repeat;
         background-position: right;
         text-align: center;
@@ -328,11 +331,24 @@
         text-align: center;
     }
     
+@media (min-width: 60em) {
+  .col {
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+@media (min-width: 60em) {
+  .col.w-40 {
+    width: 40%;
+  }
+}
+
     .general-about {
         height: 178px;
         border-style: groove outset outset outset;
         border-width: 2px;
-        border-color: #fff #000 #000 #fff;
+        border-color: var(--windowsborder);
         background: var(--boxbg);
         margin-top: 0;
         font-family: Rubik;
@@ -354,7 +370,7 @@
     .mood {
         border-style: outset;
         border-width: 2px;
-        border-color: #fff #000 #000 #fff;
+        border-color: var(--windowsborder);
         background: var(--boxbg);
         margin: 10px auto ;
     }
@@ -363,7 +379,9 @@
         display: block;
         padding-left: 5px;
         margin: 1px;
-        border-bottom-style: groove;
+        border-style: outset;
+        border-width: 2px;
+        border-color: var(--windowsborderred);
         background-image: url(https://i.imgur.com/CKX2NUO.png), var(--winbarcolor);
         background-repeat: no-repeat;
         background-position: right;
@@ -379,9 +397,11 @@
         padding: 5px 5px 0px 5px;
     }
     
-    .profile .contact .heading, .profile .table-section .heading, .home-actions .heading {
-        border-bottom-style: groove;
-        background-image: url(https://i.imgur.com/CKX2NUO.png), var(--winbarcolor);
+    .profile .contact .heading, .profile .table-section .heading, .home-actions .heading, .title {
+        border-style: outset;
+        border-width: 2px;
+        border-color: var(--windowsborderred);;
+        background-image: var(--winbarcolor);
         background-repeat: no-repeat;
         background-position: right;
         padding: 0px 6px;
@@ -391,11 +411,47 @@
     .profile .contact, .profile .url-info, .profile .table-section, .home-actions {
         border-style: outset;
         border-width: 2px;
-        border-color: #fff #000 #000 #fff;
+        border-color: var(--windowsborder);
+    }
+
+
+    .profile-info, .content, .kudos, .edit-info, .blog-preview, .blurbs, .kudos, .comments, .ctrl-enter-submit{
+        border-style: outset;
+        border-width: 2px;
+        border-color: var(--windowsborder);
+        background: var(--boxbg);
     }
     
+    .ctrl-enter-submit button, .comments-table button {
+        border-style: outset;
+        border-width: 2px;
+        border-color: var(--windowsborderred);
+        background: yellow;
+        color: red;
+    }
+
+    .edit-blog-entry .right h2 {
+        border-style: outset;
+        border-width: 2px;
+        border-color: var(--windowsborderred);
+        background-image: var(--winbarcolor);
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 0px 6px;
+        margin: 1px;
+    }
+
+    .comments {
+        margin-top: 10px;
+        color: white;
+    }
+
     .contact {
         background: var(--boxbg);
+    }
+
+    .friends-grid {
+        text-align: center;
     }
     
     .url-info {
@@ -428,28 +484,17 @@
     .details-table p {
         font-family: Rubik;
         color: black;
+        font-size: 10px;
     }
     
         td p a {
             color: blue;
         }
-
-    .profile-info {
-        border-style: outset;
-        border-width: 2px;
-        border-color: #fff #000 #000 #fff;
-        background: var(--boxbg);
-    }
-    
-    .blog-preview {
-        border-style: outset;
-        border-width: 2px;
-        border-color: #fff #000 #000 #fff;
-        background: var(--boxbg);
-    }
     
     .blog-preview h4 {
-        border-bottom-style: groove;
+        border-style: outset;
+        border-width: 2px;
+        border-color: var(--windowsborderred);
         background-image: url(https://i.imgur.com/CKX2NUO.png), var(--winbarcolor);
         background-repeat: no-repeat;
         background-position: right;
@@ -464,15 +509,10 @@
         font-weight: 500;
     }
     
-    .blurbs {
-        background: var(--boxbg);
+    .profile .blurbs .heading {
         border-style: outset;
         border-width: 2px;
-        border-color: #fff #000 #000 #fff;
-    }
-    
-    .profile .blurbs .heading {
-        border-bottom-style: groove;
+        border-color: var(--windowsborderred);
         background-image: url(https://i.imgur.com/CKX2NUO.png), var(--winbarcolor);
         background-repeat: no-repeat;
         background-position: right;
@@ -480,20 +520,27 @@
     }
     
     .profile .blurbs .section h4 {
-        color: white;
+        color: #ff0;
         padding: 0px;
-        font-weight: 600;
+        font-weight: 800;
+        font-size: 36px
     }
     
     .profile .blurbs .inner {
         font-family: Rubik;
+        color: white;
         padding: 2 0;
+    }
+
+    .profile .blurbs .inner p {
+        margin: 0;
+        padding: 0;
     }
     
     .friends {
         border-style: outset;
         border-width: 2px;
-        border-color: #fff #000 #000 #fff;
+        border-color: var(--windowsborder);
         background: var(--boxbg);
         margin-bottom: 20px;
     }
@@ -507,7 +554,9 @@
     }
     
     .profile .friends .heading {
-        border-bottom-style: groove;
+        border-style: outset;
+        border-width: 2px;
+        border-color: var(--windowsborderred);
         background-image: url(https://i.imgur.com/CKX2NUO.png), var(--winbarcolor);
         background-repeat: no-repeat;
         background-position: right;
@@ -540,17 +589,22 @@
         border-style: none groove groove none;
         border-width: 3px;
         font-family: Rubik;
+        color: black;
     }
     
-    .comments-table td * {
+    .comments-table td button {
         font-family: Rubik;
+        color: black;
+    }
+
+    .comments-table td p {
         color: white;
     }
     
     footer {
         border-style: outset;
         border-width: 2px;
-        border-color: #fff #000 #000 #fff;
+        border-color: var(--windowsborder);
         background: var(--boxbg);
         margin-bottom: 20px;
     }
@@ -562,4 +616,16 @@
     a {
         color: cyan;
     }
-</style>
+
+    .friends .inner p b::after {
+        content : " | Recent friends:"
+    }
+
+    #comments .inner p b::after {
+        content : ""
+    }
+
+    .comments-table p b::after {
+        content : ""
+    }
+</style></a></p>
