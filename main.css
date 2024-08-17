@@ -1,5 +1,10 @@
 body {
-
+    background: var(--website-background);
+    font-family: Rubik, sans-serif;
+    color: var(--fg-main-color);
+    font-size: 16px;
+    font-size: 2vmin;
+    margin:0;
 }
 
 :root /*slightly wrong legacy support*/{
@@ -9,17 +14,54 @@ body {
 
 :root /*real non-legacy*/ {
     /* fg.or.bg-element-description. dashes kinda work like folders / nested */
-    --websitebg-color: #003300;
-    --websitebg-image: url();
+    --website-background: #003300 url(/files/wtilegif.gif);
+    --website-margin: 5vmin;
 
-    /*main: main content-wrapping div. parent of overlay.*/
-    --bg-main-color: #00000090; /*temp*/
-    --bg-main-border: 2px solid black;
+    /*main / container: main content-wrapping div. parent of overlay.*/
+    --bg-container-background: #00000090; /*temp*/
+    --bg-container-border: 2px solid black;
     --fg-main-color: white;
     --fg-main-link-color: cyan;
 
-    /*overlay: a div on top of the content-wrapping div, making it a children of main*/
-    --fg-overlay-color: var(--fg-main-color);
-    --bg-overlay-color: #00ffff33; /*temp*/
-    --bg-overlay-border-color: #003300; /*temp*/
+    /*section: a div on top of the content-wrapping div, making it a children of main*/
+    --fg-section-color: var(--fg-main-color);
+    --bg-section-color: #00ffff33; /*temp*/
+    --bg-section-border-color: #003300; /*temp*/
+}
+
+.containercontainerlmao {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: block;
+    background: var(--bg-container-background);
+    border: var(--bg-container-border);
+    height: calc(100vmin - var(--website-margin) - var(--website-margin));
+    width: calc(100vmin - var(--website-margin) - var(--website-margin));
+}
+.flexcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toptitle {
+    display: block;
+    text-align: center;
+}
+
+.section {
+ padding: 1em;
+ font-size: 1em;
+}
+
+.title {
+    font-size: 3em;
+    margin: 0.1em;
+    padding: 0.1em;
 }
