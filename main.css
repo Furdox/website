@@ -9,7 +9,7 @@ body {
 
 :root /*slightly wrong legacy support*/{
     --bg-main-color: black;
-    --bg-overlay-color: #00ffff;
+    --bg-section-color: #00ffff;
 }
 
 :root /*real non-legacy*/ {
@@ -25,7 +25,7 @@ body {
 
     /*section: a div on top of the content-wrapping div, making it a children of main*/
     --fg-section-color: var(--fg-main-color);
-    --bg-section-color: #00ffff33; /*temp*/
+    --bg-section-background: #00ffff33; /*temp*/
     --bg-section-border-color: #003300; /*temp*/
 }
 
@@ -41,14 +41,20 @@ body {
     display: block;
     background: var(--bg-container-background);
     border: var(--bg-container-border);
-    height: calc(100vmin - var(--website-margin) - var(--website-margin));
-    width: calc(100vmin - var(--website-margin) - var(--website-margin));
+    height: calc(100vmin - var(--website-margin) - var(--website-margin) - 1vmin);
+    width: calc(100vmin - var(--website-margin) - var(--website-margin) - 1vmin);
     margin: var(--website-margin);
 }
 .flexcontainer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gridcontainer {
+    display: grid;
+    gap: 0.1em;
 }
 
 .toptitle {
@@ -61,6 +67,10 @@ body {
 .section {
  padding: 1em;
  font-size: 1em;
+ background: var(--bg-section-background);
+ margin: 1em;
+ width: 18em;
+ height: 13em;
 }
 
 .title {
