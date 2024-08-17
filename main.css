@@ -2,9 +2,16 @@ body {
     background: var(--website-background);
     font-family: Rubik, sans-serif;
     color: var(--fg-main-color);
-    font-size: 16px;
+    font-size: 20px;
     font-size: 2vmin;
     margin:0;
+}
+
+a {
+    color: var(--fg-main-link-color);
+}
+a:hover {
+    color: var(--fg-main-link-color-hover);
 }
 
 :root /*slightly wrong legacy support*/{
@@ -22,6 +29,7 @@ body {
     --bg-container-border: 0.5vmin solid black;
     --fg-main-color: white;
     --fg-main-link-color: cyan;
+    --fg-main-link-color-hover: red;
 
     /*section: a div on top of the content-wrapping div, making it a children of main*/
     --fg-section-color: var(--fg-main-color);
@@ -79,7 +87,7 @@ body {
 }
 
 .title {
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0.2vmin;
     padding: 0.2vmin;
     text-align: center;;
