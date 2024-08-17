@@ -98,3 +98,9 @@ body {
 #chatsection, #descriptionsection {
     width: 50%;
 }
+#pfpsection {
+    padding: 0;
+    margin-left: 1em;
+    width: calc(30% + 4vmin);
+    height: calc(13em + 4vmin);
+}
