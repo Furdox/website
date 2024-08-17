@@ -1,0 +1,25 @@
+body {
+
+}
+
+:root /*slightly wrong legacy support*/{
+    --bg-main-color: black;
+    --bg-overlay-color: #00ffff;
+}
+
+:root /*real non-legacy*/ {
+    /* fg.or.bg-element-description. dashes kinda work like folders / nested */
+    --websitebg-color: #003300;
+    --websitebg-image: url();
+
+    /*main: main content-wrapping div. parent of overlay.*/
+    --bg-main-color: #00000090; /*temp*/
+    --bg-main-border: 2px solid black;
+    --fg-main-color: white;
+    --fg-main-link-color: cyan;
+
+    /*overlay: a div on top of the content-wrapping div, making it a children of main*/
+    --fg-overlay-color: var(--fg-main-color);
+    --bg-overlay-color: #00ffff33; /*temp*/
+    --bg-overlay-border-color: #003300; /*temp*/
+}
