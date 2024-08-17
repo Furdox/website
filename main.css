@@ -19,7 +19,7 @@ body {
 
     /*main / container: main content-wrapping div. parent of overlay.*/
     --bg-container-background: #00000090; /*temp*/
-    --bg-container-border: 2px solid black;
+    --bg-container-border: 0.5vmin solid black;
     --fg-main-color: white;
     --fg-main-link-color: cyan;
 
@@ -43,6 +43,7 @@ body {
     border: var(--bg-container-border);
     height: calc(100vmin - var(--website-margin) - var(--website-margin));
     width: calc(100vmin - var(--website-margin) - var(--website-margin));
+    margin: var(--website-margin);
 }
 .flexcontainer {
     display: flex;
@@ -53,6 +54,8 @@ body {
 .toptitle {
     display: block;
     text-align: center;
+    font-size: 8em;
+    font-weight: bold;
 }
 
 .section {
