@@ -65,16 +65,36 @@ body {
 }
 
 .section {
- padding: 1em;
- font-size: 1em;
- background: var(--bg-section-background);
- margin: 1em;
- width: 18em;
- height: 13em;
+    padding: 2vmin;
+    font-size: 1em;
+    background: var(--bg-section-background);
+    margin: 2vmin;
+    width: 18em;
+    height: 13em;
+}
+.section p {
+    padding: 0.2vmin;
+    margin: 1vmin;
+    margin-top: 2vmin;
 }
 
 .title {
     font-size: 3em;
-    margin: 0.1em;
-    padding: 0.1em;
+    margin: 0.2vmin;
+    padding: 0.2vmin;
+    text-align: center;;
+}
+
+#pfpsection img {
+    display:block;
+    margin: auto;
+    width: auto;
+    height: 100%;
+}
+
+#pfpsection, #linkssection {
+    width: 30%;
+}
+#chatsection, #descriptionsection {
+    width: 50%;
 }
