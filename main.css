@@ -21,7 +21,7 @@ a:hover {
 
 :root /*real non-legacy*/ {
     /* fg.or.bg-element-description. dashes kinda work like folders / nested */
-    --website-background: #003300 url(/files/wtilegif.gif);
+    --website-background: #003300 url(/files/wtilegif_white_pinkbg.gif);
     --website-margin: 1em;
 
     /*main / container: main content-wrapping div. parent of overlay.*/
