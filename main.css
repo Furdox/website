@@ -14,27 +14,36 @@ a:hover {
     color: var(--fg-main-link-color-hover);
 }
 
-:root /*slightly wrong legacy support*/{
-    --bg-main-color: black;
-    --bg-section-color: #00ffff;
+:root /*slightly wrong legacy support (I just realised this does literally nothing for now because vars are vars)*/{
+    --bg-main-color: pink;
+    --bg-section-color: cyan;
 }
 
 :root /*real non-legacy*/ {
     /* fg.or.bg-element-description. dashes kinda work like folders / nested */
     --website-background: #003300 url(/files/wtilegif.gif);
-    --website-margin: 2.5em;
+    --website-margin: 1em;
 
     /*main / container: main content-wrapping div. parent of overlay.*/
-    --bg-container-background: #00000090; /*temp*/
-    --bg-container-border: 0.3em solid black;
+    /*--bg-container-background: #ffaacc;*/
+    --bg-container-background: repeating-linear-gradient(0deg,
+        #ffaacc,
+        #ffaacc 0.2em,
+        #ffbbdd 0.2em,
+        #ffbbdd 0.4em);
+    --bg-container-border: 0.3em solid #ff8888;
+    --bg-container-border-radius: 3em;
+
     --fg-main-color: white;
     --fg-main-link-color: cyan;
     --fg-main-link-color-hover: red;
 
     /*section: a div on top of the content-wrapping div, making it a children of main*/
     --fg-section-color: var(--fg-main-color);
-    --bg-section-background: #00ffff33; /*temp*/
+    --bg-section-background: #9900ff66; /*temp*/
     --bg-section-border-color: #003300; /*temp*/
+    --bg-section-border: 0.2em solid #9900ff99;
+    --bg-section-border-radius: 2em;
 }
 
 .containercontainerlmao {
@@ -44,13 +53,25 @@ a:hover {
     transform: translate(-50%, /*-50%*/0%);
 }
 
+@keyframes bg {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 0 100%;
+    }
+}
+
 .container {
     display: block;
     background: var(--bg-container-background);
     border: var(--bg-container-border);
-    height: calc(50em - var(--website-margin) - var(--website-margin) - 0.5em);
-    width: calc(50em - var(--website-margin) - var(--website-margin) - 0.5em);
+    border-radius: var(--bg-container-border-radius);
+    height: 47.9em;
+    width: 50em;
     margin: var(--website-margin);
+    animation: bg 2s linear infinite;
 }
 .flexcontainer {
     display: flex;
@@ -65,10 +86,29 @@ a:hover {
 }
 
 .toptitle {
+    color: transparent;
+    background: linear-gradient(90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%);
+    margin: auto;
     display: block;
     text-align: center;
     font-size: 8em;
     font-weight: bold;
+    margin-bottom: -0.1em;
+    -webkit-background-clip: text;
+    background-clip: text;
+    width: fit-content;
+    margin-top: 0;
 }
 
 .section {
@@ -77,12 +117,15 @@ a:hover {
     background: var(--bg-section-background);
     margin: 1em;
     width: 18em;
-    height: 13em;
+    height: 15em;
+    border: var(--bg-section-border);
+    border-radius: var(--bg-section-border-radius);
 }
 .section p {
     padding: 0.1em;
     margin: 0.5em;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    font-size: 1.2em;
 }
 
 .title {
@@ -100,14 +143,43 @@ a:hover {
 }
 
 #pfpsection, #linkssection {
-    width: 30%;
+    width: 15em;
 }
 #chatsection, #descriptionsection {
-    width: 50%;
+    width: 25em;
 }
-#pfpsection {
-    padding: 0;
-    margin-left: 1em;
-    width: calc(30% + 2em);
-    height: calc(13em + 2em);
+
+
+
+@media only screen and (max-width: 780px) {
+
+body{
+    font-size: 13px;
+}
+
+.toptitle {
+    font-size: 4.5em;
+    margin-top: 0.1em;
+    margin-bottom: 0.0em;
+}
+
+.container {
+        display: block;
+        background: var(--bg-container-background);
+        border: var(--bg-container-border);
+        border-radius: var(--bg-container-border-radius);
+        border-radius: calc(var(--bg-container-border-radius) - 1em);
+        height: 93.1em;
+        width: 25em;
+        margin: var(--website-margin);
+        animation: bg 2s linear infinite;
+    }
+
+#linkssection {
+    width: 25em;
+}
+#chatsection {
+    height: 25em;
+}
+
 }
