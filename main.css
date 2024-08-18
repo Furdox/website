@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{font-family: Rubik;}
+
 body {
     background: var(--website-background);
-    font-family: Rubik, sans-serif;
+    font-family: Rubik, Roboto, sans-serif;
     color: var(--fg-main-color);
     font-size: 15px; /* This is the container's scale. Yes, I made it so a single value could control how big the stuff is. Pretty epic, right? */
     /*font-size: 2vmin;*/
