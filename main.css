@@ -148,6 +148,9 @@ a:hover {
 #chatsection, #descriptionsection {
     width: 25em;
 }
+#chatsection iframe {
+    height: fit-content;
+}
 
 
 
