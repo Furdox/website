@@ -3,7 +3,7 @@ body {
     font-family: Rubik, sans-serif;
     color: var(--fg-main-color);
     font-size: 20px;
-    font-size: 2vmin;
+    /*font-size: 2vmin;*/
     margin:0;
 }
 
@@ -22,11 +22,12 @@ a:hover {
 :root /*real non-legacy*/ {
     /* fg.or.bg-element-description. dashes kinda work like folders / nested */
     --website-background: #003300 url(/files/wtilegif.gif);
-    --website-margin: 5vmin;
+    /*--website-margin: 5vmin;*/
+    --website-margin: 10px;
 
     /*main / container: main content-wrapping div. parent of overlay.*/
     --bg-container-background: #00000090; /*temp*/
-    --bg-container-border: 0.5vmin solid black;
+    --bg-container-border: 4px solid black;
     --fg-main-color: white;
     --fg-main-link-color: cyan;
     --fg-main-link-color-hover: red;
@@ -37,21 +38,23 @@ a:hover {
     --bg-section-border-color: #003300; /*temp*/
 }
 
-.containercontainerlmao {
+/*.containercontainerlmao {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
+}*/
 
 .container {
     display: block;
     background: var(--bg-container-background);
     border: var(--bg-container-border);
-    height: calc(100vmin - var(--website-margin) - var(--website-margin) - 1vmin);
-    width: calc(100vmin - var(--website-margin) - var(--website-margin) - 1vmin);
+    /*height: calc(100vmin - var(--website-margin) - var(--website-margin) - 1vmin);
+    width: calc(100vmin - var(--website-margin) - var(--website-margin) - 1vmin);*/
     margin: var(--website-margin);
+    max-width: 880px;
+    min-width: 550px;
+
 }
 .flexcontainer {
     display: flex;
@@ -73,23 +76,23 @@ a:hover {
 }
 
 .section {
-    padding: 2vmin;
+    /*padding: 2vmin;*/
     font-size: 1em;
     background: var(--bg-section-background);
-    margin: 2vmin;
+    /*margin: 2vmin;*/
     width: 18em;
     height: 13em;
 }
 .section p {
-    padding: 0.2vmin;
+    /*padding: 0.2vmin;
     margin: 1vmin;
-    margin-top: 2vmin;
+    margin-top: 2vmin;*/
 }
 
 .title {
     font-size: 3.5em;
-    margin: 0.2vmin;
-    padding: 0.2vmin;
+    /*margin: 0.2vmin;
+    padding: 0.2vmin;*/
     text-align: center;;
 }
 
@@ -97,18 +100,21 @@ a:hover {
     display:block;
     margin: auto;
     width: auto;
-    height: 100%;
+    width: 100%;
+    /*height: 100%;*/
 }
 
 #pfpsection, #linkssection {
-    width: 30%;
+    min-width: 250px;
+    max-width: 250px;
 }
 #chatsection, #descriptionsection {
-    width: 50%;
+    min-width: 450px;
+    max-width: 450px;
 }
 #pfpsection {
     padding: 0;
-    margin-left: 1em;
-    width: calc(30% + 4vmin);
-    height: calc(13em + 4vmin);
+    /*margin-left: 1em;*/
+    /*width: calc(30% + 4vmin);
+    height: calc(13em + 4vmin);*/
 }
