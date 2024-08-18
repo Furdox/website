@@ -148,10 +148,17 @@ a:hover {
 #chatsection, #descriptionsection {
     width: 25em;
 }
+#chatsection .title {
+    color: #fff3
+}
 #chatsection iframe {
     height: fit-content;
-    padding-top: 0px;
+    padding-top: -1em;
     padding-bottom: 0.1em;
+}
+#chatsection p {
+    margin-top: -5em;
+    height: 13.5em;
 }
 
 
@@ -185,6 +192,19 @@ body{
 }
 #chatsection {
     height: 25em;
+}
+#chatsection .title {
+    color: white;
+}
+#chatsection p {
+    margin-top: -5em;
+    height: 20em;
+}
+#chatsection iframe {
+    height: fit-content;
+    padding-top: 0em;
+    padding-bottom: 0.1em;
+    height: 22em !important;
 }
 
 }
