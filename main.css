@@ -162,6 +162,8 @@ a:hover {
 #chatsection p {
     margin-top: -5em;
     height: 13.5em;
+    width: 110%;
+    margin-left: -5%;
 }
 
 
