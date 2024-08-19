@@ -41,6 +41,12 @@ def scan_and_generate_playlist(directory):
 
                 playlist.append(playlist_entry)
 
+    # Sort by artist, then by title
+    playlist.sort(key=lambda x: (
+        x.get('metaData', {}).get('artist', '').lower(),
+        x.get('metaData', {}).get('title', '').lower()
+    ))
+
     return playlist
 
 def generate_js(playlist):
