@@ -71,8 +71,6 @@ a:hover {
     background: var(--bg-container-background);
     border: var(--bg-container-border);
     border-radius: var(--bg-container-border-radius);
-    height: 47.9em;
-    width: 50em;
     margin: var(--website-margin);
     animation: bg 2s linear infinite;
 }
@@ -181,16 +179,14 @@ body{
 }
 
 .container {
-        display: block;
-        background: var(--bg-container-background);
-        border: var(--bg-container-border);
-        border-radius: var(--bg-container-border-radius);
-        border-radius: calc(var(--bg-container-border-radius) - 1em);
-        height: 93.1em;
-        width: 25em;
-        margin: var(--website-margin);
-        animation: bg 2s linear infinite;
-    }
+    display: block;
+    background: var(--bg-container-background);
+    border: var(--bg-container-border);
+    border-radius: var(--bg-container-border-radius);
+    border-radius: calc(var(--bg-container-border-radius) - 1em);
+    margin: var(--website-margin);
+    animation: bg 2s linear infinite;
+}
 
 #linkssection {
     width: 25em;

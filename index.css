@@ -1,0 +1,11 @@
+.container {
+    height: 47.9em;
+    width: 50em;
+}
+
+@media only screen and (max-width: 780px) {
+.container {
+    height: 93.1em;
+    width: 25em;
+}
+}
