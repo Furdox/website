@@ -1,0 +1,63 @@
+:root
+
+/*real non-legacy*/
+    {
+    /* fg.or.bg-element-description. dashes kinda work like folders / nested */
+    --website-background: #003300 url(/files/wtilegif_white_pinkbg.gif);
+    --website-margin: 1em;
+
+    /*main / container: main content-wrapping div. parent of overlay.*/
+    /*--bg-container-background: #ffaacc;*/
+    --bg-container-background: repeating-linear-gradient(0deg,
+            #ff2222,
+            #ff3300.2em,
+            #ff2233 0.2em,
+            #ff3300 0.4em);
+    --bg-container-border: 1em solid #770000;
+    --bg-container-border-radius: 3em;
+
+    --fg-main-color: white;
+    --fg-main-link-color: cyan;
+    --fg-main-link-color-hover: red;
+
+    /*section: a div on top of the content-wrapping div, making it a children of main*/
+    --fg-section-color: var(--fg-main-color);
+    --bg-section-background: #9900ff66;
+    /*temp*/
+    --bg-section-border-color: #003300;
+    /*temp*/
+    --bg-section-border: 0.2em solid #9900ff99;
+    --bg-section-border-radius: 2em;
+}
+
+.toptitle {
+    color: white;
+    margin-top: -20px;
+}
+.container {
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+a {
+    padding: 10px;
+    border: #770000 5px solid;
+    border-radius: 10px;
+}
+
+.scratchcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 2em;
+    text-align: center;
+    padding: auto;
+}
+
+.scratchcontainer img {
+    height: 64px;
+}
