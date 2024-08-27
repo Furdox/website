@@ -146,6 +146,9 @@ a:hover {
 #pfpsection, #linkssection {
     width: 15em;
 }
+#linkssection .title {
+    margin-bottom: -0.2em;
+}
 #chatsection, #descriptionsection {
     width: 25em;
 }
