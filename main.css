@@ -163,7 +163,9 @@ a:hover {
     width: 105%;
     margin-left: -2.5%;
 }
-
+.emptyli {
+    list-style-type: none;
+}
 
 
 @media only screen and (max-width: 780px) {
