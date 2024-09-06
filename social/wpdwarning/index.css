@@ -32,12 +32,12 @@
 
 .toptitle {
     color: white;
-    margin-top: -20px;
+    margin-top: -10em;
 }
 .container {
-    padding: 20px;
+    padding: 10em;
     height: 44em;
-    width: 45em;
+    width: 40em;
 }
 @media only screen and (max-width: 780px) {
     body{
@@ -47,7 +47,7 @@
         height: 44em;
         width: 30em;
     }
-
+}
 p {
     text-align: center;
     font-size: 1.5em;
