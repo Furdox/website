@@ -36,7 +36,7 @@
 }
 .container {
     padding: 1em;
-    height: 44em;
+    height: 40em;
     width: 40em;
 }
 @media only screen and (max-width: 780px) {
@@ -44,7 +44,7 @@
         font-size: 12px;
     }
     .container {
-        height: 30em;
+        height: 35em;
         width: 25em;
     }
 }
@@ -54,6 +54,7 @@ p {
 }
 
 a {
+    background: #550000;
     padding: 0.5em;
     border: #770000 0.5em solid;
     border-radius: 0.5em;
@@ -69,5 +70,5 @@ a {
 }
 
 .scratchcontainer img {
-    height: 2em;
+    height: 2.2em;
 }
