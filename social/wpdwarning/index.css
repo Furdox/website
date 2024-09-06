@@ -13,7 +13,7 @@
             #ff3300.2em,
             #ff2233 0.2em,
             #ff3300 0.4em);
-    --bg-container-border: 0.1em solid #770000;
+    --bg-container-border: 1.5em solid #770000;
     --bg-container-border-radius: 3em;
 
     --fg-main-color: white;
@@ -55,7 +55,7 @@ p {
 
 a {
     padding: 0.5em;
-    border: #770000 2.5em solid;
+    border: #770000 0.5em solid;
     border-radius: 0.5em;
 }
 
