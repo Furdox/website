@@ -39,14 +39,6 @@
     height: 33em;
     width: 40em;
 }
-@media only screen and (max-width: 480px) {
-    .container {
-        height: 28.5em;
-        width: 26em;
-        border-radius: 4em;
-        padding: 2em;
-    }
-}
 @media only screen and (max-width: 780px) {
     .toptitle {
         font-size: 5.5em;
@@ -60,6 +52,14 @@
     .container {
         height: 27em;
         width: 38em;
+        border-radius: 4em;
+        padding: 2em;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container {
+        height: 28.5em;
+        width: 26em;
         border-radius: 4em;
         padding: 2em;
     }
