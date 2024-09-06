@@ -56,7 +56,7 @@
         padding: 2em;
     }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
     .container {
         height: 28.5em;
         width: 26em;
