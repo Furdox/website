@@ -13,7 +13,7 @@
             #ff3300.2em,
             #ff2233 0.2em,
             #ff3300 0.4em);
-    --bg-container-border: 1em solid #770000;
+    --bg-container-border: 0.1em solid #770000;
     --bg-container-border-radius: 3em;
 
     --fg-main-color: white;
@@ -32,7 +32,7 @@
 
 .toptitle {
     color: white;
-    margin-top: -1em;
+    margin-top: -0.1em;
 }
 .container {
     padding: 1em;
