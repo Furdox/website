@@ -55,6 +55,9 @@
         border-radius: 4em;
         padding: 2em;
     }
+    .scratchcontainer img {
+        height: 2.2em;
+    }
 }
 @media only screen and (max-width: 570px) {
     .container {
@@ -86,5 +89,5 @@ a {
 }
 
 .scratchcontainer img {
-    height: 2.2em;
+    height: 2.4em;
 }
