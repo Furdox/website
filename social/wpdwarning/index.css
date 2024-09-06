@@ -32,10 +32,10 @@
 
 .toptitle {
     color: white;
-    margin-top: -10em;
+    margin-top: -1em;
 }
 .container {
-    padding: 10em;
+    padding: 1em;
     height: 44em;
     width: 40em;
 }
@@ -54,9 +54,9 @@ p {
 }
 
 a {
-    padding: 5em;
+    padding: 0.5em;
     border: #770000 2.5em solid;
-    border-radius: 5em;
+    border-radius: 0.5em;
 }
 
 .scratchcontainer {
@@ -69,5 +69,5 @@ a {
 }
 
 .scratchcontainer img {
-    height: 32em;
+    height: 2em;
 }
