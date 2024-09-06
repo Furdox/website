@@ -36,7 +36,17 @@
 }
 .container {
     padding: 20px;
+    height: 44em;
+    width: 45em;
 }
+@media only screen and (max-width: 780px) {
+    body{
+        font-size: 13px;
+    }
+    .container {
+        height: 44em;
+        width: 30em;
+    }
 
 p {
     text-align: center;
